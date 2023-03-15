@@ -16,7 +16,7 @@ public class CadastroCliente {
                     "numeroCadastro=" + clientes.get(i).numeroCadastro +
                     ", nome='" + clientes.get(i).nome + '\'' +
                     ", cpf='" + clientes.get(i).cpf + '\'' +
-                    ", telefone='" + clientes.get(i).telefone + '\'' +
+                    ", contato='" + clientes.get(i).contato + '\'' +
                     '}'
         );
         }

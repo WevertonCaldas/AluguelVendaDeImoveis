@@ -1,19 +1,20 @@
-
-
 public class Cliente {
 
     int numeroCadastro;
     String nome;
     String cpf;
-    String telefone;
+    Endereco endereco;
+    Contato contato;
 
+    public Cliente() {
+    }
 
-    public Cliente(int numeroCadastro, String nome, String cpf, String telefone) {
-
+    public Cliente(int numeroCadastro, String nome, String cpf, Endereco endereco, Contato contato) {
         this.numeroCadastro = numeroCadastro;
         this.nome = nome;
         this.cpf = cpf;
-        this.telefone = telefone;
+        this.endereco = endereco;
+        this.contato = contato;
     }
 
     public int getNumeroCadastro() {
@@ -40,12 +41,20 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public Endereco getEndereco() {
+        return endereco;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public Contato getContato() {
+        return contato;
+    }
+
+    public void setContato(Contato contato) {
+        this.contato = contato;
     }
 
     @Override
@@ -54,7 +63,8 @@ public class Cliente {
                 "numeroCadastro=" + numeroCadastro +
                 ", nome='" + nome + '\'' +
                 ", cpf='" + cpf + '\'' +
-                ", telefone='" + telefone + '\'' +
+                ", endereco=" + endereco +
+                ", contato=" + contato +
                 '}';
     }
 }

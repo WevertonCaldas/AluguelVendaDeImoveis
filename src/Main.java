@@ -1,16 +1,24 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
 
+        Contato contato1 = new Contato("83996951231", "suezio@gmail.com");
+        Contato contato2 = new Contato("83996954465", "jose@gmail.com");
+
+        Endereco endereco1 = new Endereco("rua José Otaviano de Moura", "Bairro", "Cajazeiras", "PB", "20");
+        Endereco endereco2 = new Endereco("rua José Otaviano de Moura", "Bairro", "Cajazeiras", "PB", "20");
 
         // Cadastrar imovel
 
         CadastroImovel cadastroImovel = new CadastroImovel();
 
-        imovel imovel1 = new imovel(1,"casa", "rua José Otaviano de Moura - numero 47", "Casa com sala, cozinha, 2 banheiros,3 quartos", 500000.00, "83999556622", "Vende-se", new Corretor(1,"josé", "83996954465", "Rua josé otaviano, numero - 54"));
-        imovel imovel2 = new imovel(2,"apartamento", "rua José Otaviano de Moura - numero 103", "Apartamento com sala, cozinha, 2 banheiros,3 quartos", 600000.00, "83999554411", "Vende-se", new Corretor(2,"Suezio", "83996951231", "Rua josé Moura, numero - 88"));
+        Imovel imovel1 = new Imovel(1, "casa", "rua José Otaviano de Moura - numero 47",
+                "Casa com sala, cozinha, 2 banheiros,3 quartos", 500000.00, "83999556622",
+                "Vende-se", new Corretor(1, "josé", contato2, ""));
+
+        Imovel imovel2 = new Imovel(2, "apartamento", "rua José Otaviano de Moura - numero 103",
+                "Apartamento com sala, cozinha, 2 banheiros,3 quartos", 600000.00, "83999554411",
+                "Vende-se", new Corretor(2, "Suezio", contato1, ""));
 
         cadastroImovel.adicionarImovel(imovel1);
         cadastroImovel.adicionarImovel(imovel2);
@@ -88,7 +96,6 @@ public class Main {
 //        corretor.ListarCorretor();
 
 //        corretor.DeletarCorretor(1);
-
 
 
     }

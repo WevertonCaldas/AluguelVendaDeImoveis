@@ -2,25 +2,23 @@ public class AlugarVender {
 
     int numeroCadastro;
     String tipo;
-    String endereço;
-    String descrição;
+    String descricao;
     Double valor;
     String telefone;
-
     String status;
-
+    Endereco endereco;
     Corretor corretor;
-
     Cliente cliente;
 
+    public AlugarVender() {
+    }
 
-
-    public AlugarVender(int numeroCadastro, String tipo, String endereço, String descrição, Double valor, String telefone, String status, Corretor corretor, Cliente cliente) {
+    public AlugarVender(int numeroCadastro, String tipo, Endereco endereco, String descricao, Double valor, String telefone, String status, Corretor corretor, Cliente cliente) {
 
         this.numeroCadastro = numeroCadastro;
         this.tipo = tipo;
-        this.endereço = endereço;
-        this.descrição = descrição;
+        this.endereco = endereco;
+        this.descricao = descricao;
         this.valor = valor;
         this.telefone = telefone;
         this.status = status;
@@ -44,20 +42,12 @@ public class AlugarVender {
         this.tipo = tipo;
     }
 
-    public String getEndereço() {
-        return endereço;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
-    }
-
-    public String getDescrição() {
-        return descrição;
-    }
-
-    public void setDescrição(String descrição) {
-        this.descrição = descrição;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     public Double getValor() {
@@ -83,6 +73,15 @@ public class AlugarVender {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
     public Corretor getCorretor() {
         return corretor;
     }

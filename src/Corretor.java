@@ -1,19 +1,19 @@
-import java.util.ArrayList;
-
 public class Corretor {
 
     int CRECI;
     String nome;
-    String contato;
-    String endereco;
+    Contato contato;
+    Endereco endereco;
 
-    public Corretor(int CRECI, String nome, String contato, String endereco) {
+    public Corretor() {
+    }
+
+    public Corretor(int CRECI, String nome, Contato contato, Endereco endereco) {
         this.CRECI = CRECI;
         this.nome = nome;
         this.contato = contato;
         this.endereco = endereco;
     }
-
 
     public int getCRECI() {
         return CRECI;
@@ -31,29 +31,29 @@ public class Corretor {
         this.nome = nome;
     }
 
-    public String getContato() {
+    public Contato getContato() {
         return contato;
     }
 
-    public void setContato(String contato) {
+    public void setContato(Contato contato) {
         this.contato = contato;
     }
 
-    public String getEndereco() {
+    public Endereco getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(String endereco) {
+    public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
 
     @Override
     public String toString() {
         return "Corretor{" +
-                "CRECI='" + CRECI + '\'' +
+                "CRECI=" + CRECI +
                 ", nome='" + nome + '\'' +
-                ", contato='" + contato + '\'' +
-                ", endereco='" + endereco + '\'' +
+                ", contato=" + contato +
+                ", endereco=" + endereco +
                 '}';
     }
 }
