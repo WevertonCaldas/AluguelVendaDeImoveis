@@ -1,18 +1,13 @@
-public class Imovel {
+package Modelos;
 
-    int numeroCadastro;
-    String tipo;
-    String descricao;
-    Double valor;
-    String status;
-    Corretor corretor;
-    Endereco endereco;
-    Contato contato;
+public class AlugarVender extends AbstImovel {
+    Cliente cliente;
 
-    public Imovel() {
+    public AlugarVender() {
     }
 
-    public Imovel(int numeroCadastro, String tipo, String descricao, Double valor, String status, Corretor corretor, Endereco endereco, Contato contato) {
+    public AlugarVender(int numeroCadastro, String tipo, String descricao, Double valor, String status, Corretor corretor, Endereco endereco, Contato contato, Cliente cliente) {
+
         this.numeroCadastro = numeroCadastro;
         this.tipo = tipo;
         this.descricao = descricao;
@@ -21,6 +16,7 @@ public class Imovel {
         this.corretor = corretor;
         this.endereco = endereco;
         this.contato = contato;
+        this.cliente = cliente;
     }
 
     public int getNumeroCadastro() {
@@ -87,17 +83,11 @@ public class Imovel {
         this.contato = contato;
     }
 
-    @Override
-    public String toString() {
-        return "Imovel{" +
-                "numeroCadastro=" + numeroCadastro +
-                ", tipo='" + tipo + '\'' +
-                ", descrição='" + descricao + '\'' +
-                ", valor=" + valor +
-                ", status='" + status + '\'' +
-                ", corretor=" + corretor +
-                ", endereco=" + endereco +
-                ", contato=" + contato +
-                '}';
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 }

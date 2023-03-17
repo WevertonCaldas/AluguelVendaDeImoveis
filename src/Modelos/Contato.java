@@ -1,3 +1,5 @@
+package Modelos;
+
 public class Contato {
 
     private String telefone;

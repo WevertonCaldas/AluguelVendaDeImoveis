@@ -1,3 +1,9 @@
+import Modelos.Contato;
+import Modelos.Corretor;
+import Modelos.Endereco;
+import Modelos.Imovel;
+import cruds.CadastroImovel;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,13 +18,11 @@ public class Main {
 
         CadastroImovel cadastroImovel = new CadastroImovel();
 
-        Imovel imovel1 = new Imovel(1, "casa", "rua José Otaviano de Moura - numero 47",
-                "Casa com sala, cozinha, 2 banheiros,3 quartos", 500000.00, "83999556622",
-                "Vende-se", new Corretor(1, "josé", contato2, ""));
+        Imovel imovel1 = new Imovel(1, "casa", "Casa com sala, cozinha, 2 banheiros,3 quartos", 500000.00,
+                "Vende-se", new Corretor(1, "josé", contato2, endereco2), endereco1, contato1);
 
-        Imovel imovel2 = new Imovel(2, "apartamento", "rua José Otaviano de Moura - numero 103",
-                "Apartamento com sala, cozinha, 2 banheiros,3 quartos", 600000.00, "83999554411",
-                "Vende-se", new Corretor(2, "Suezio", contato1, ""));
+        Imovel imovel2 = new Imovel(2, "apartamento", "Apartamento com sala, cozinha, 2 banheiros,3 quartos", 600000.00,
+                "Vende-se", new Corretor(2, "Suezio", contato1, endereco1), endereco2, contato2);
 
         cadastroImovel.adicionarImovel(imovel1);
         cadastroImovel.adicionarImovel(imovel2);

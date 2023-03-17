@@ -1,3 +1,7 @@
+package cruds;
+
+import Modelos.Corretor;
+
 import java.util.ArrayList;
 
 public class CadastroCorretor {
@@ -15,10 +19,10 @@ public class CadastroCorretor {
 
             System.out.println(
                     "Corretor - {" +
-                            "CRECI='" + Corretores.get(i).CRECI + '\'' +
-                            ", nome='" + Corretores.get(i).nome + '\'' +
-                            ", contato='" + Corretores.get(i).contato + '\'' +
-                            ", endereco='" + Corretores.get(i).endereco + '\'' +
+                            "CRECI='" + Corretores.get(i).getCRECI() + '\'' +
+                            ", nome='" + Corretores.get(i).getNome() + '\'' +
+                            ", contato='" + Corretores.get(i).getContato() + '\'' +
+                            ", endereco='" + Corretores.get(i).getEndereco()+ '\'' +
                             '}'
             );
         }
@@ -29,7 +33,7 @@ public class CadastroCorretor {
 
         for (int i = 0; i < Corretores.size(); i++) {
 
-            if (Corretores.get(i).CRECI == numeroCreci) {
+            if (Corretores.get(i).getCRECI() == numeroCreci) {
                 Corretores.remove(Corretores.get(i));
                 System.out.println("Corretor deletado com sucesso!!!");
             }

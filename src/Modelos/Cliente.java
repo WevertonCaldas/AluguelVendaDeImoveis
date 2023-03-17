@@ -1,10 +1,8 @@
-public class Cliente {
+package Modelos;
+
+public class Cliente extends AbstPessoa {
 
     int numeroCadastro;
-    String nome;
-    String cpf;
-    Endereco endereco;
-    Contato contato;
 
     public Cliente() {
     }

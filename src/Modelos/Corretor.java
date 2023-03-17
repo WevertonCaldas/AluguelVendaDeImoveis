@@ -1,18 +1,18 @@
-public class Corretor {
+package Modelos;
+
+
+public class Corretor extends AbstPessoa {
 
     int CRECI;
-    String nome;
-    Contato contato;
-    Endereco endereco;
-
     public Corretor() {
     }
 
-    public Corretor(int CRECI, String nome, Contato contato, Endereco endereco) {
+    public Corretor(int CRECI, String nome, String cpf, Endereco endereco, Contato contato) {
         this.CRECI = CRECI;
         this.nome = nome;
-        this.contato = contato;
+        this.cpf = cpf;
         this.endereco = endereco;
+        this.contato = contato;
     }
 
     public int getCRECI() {
