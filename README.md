@@ -10,7 +10,7 @@ SOLID é um acrônimo criado por Michael Feathers, após observar que cinco prin
 
 #### **S.O.L.I.D: Os 5 princípios da POO**
 
-1. Esse princípio declara que uma classe deve ser especializada em um único assunto e possuir apenas uma responsabilidade dentro do software, ou seja, a classe deve ter uma única tarefa ou ação para executar.
+1. Princípio da Responsabilidade Única — Esse princípio declara que uma classe deve ser especializada em um único assunto e possuir apenas uma responsabilidade dentro do software, ou seja, a classe deve ter uma única tarefa ou ação para executar.
 
 2. Princípio Aberto-Fechado — Objetos ou entidades devem estar abertos para extensão, mas fechados para modificação, ou seja, quando novos comportamentos e recursos precisam ser adicionados no software, devemos estender e não alterar o código fonte original.
 
