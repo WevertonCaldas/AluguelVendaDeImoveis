@@ -1,6 +1,6 @@
 # **PROJETO DA DISCIPLINA EVOLUÇÃO DE SOFTWARE** 💻
 
-### OBJETIVO DESENVOLVER UMA APLICAÇÃO SEM OBEDECER ÀS BOAS PRÁTICAS DA PROGRAMAÇÃO, PARA SER REALIZADA A DEVIDA MANUTENÇÃO NO PROJETO UTILIZANDO OS PRÍNCIPIOS DE PROGRAMAÇÃO S.O.L.I.D
+### Objetivo Desenvolver Uma Aplicação Sem Obedecer ÀS Boas Práticas Da Programação, Para Ser Realizada A Devida Manutenção No Projeto Utilizando Os Príncipios De Programação S.O.L.I.D
 
 #### **O QUE É S.O.L.I.D ?**
 
@@ -10,7 +10,7 @@ SOLID é um acrônimo criado por Michael Feathers, após observar que cinco prin
 
 #### **S.O.L.I.D: Os 5 princípios da POO**
 
-1. Esse princípio declara que uma classe deve ser especializada em um único assunto e possuir apenas uma responsabilidade dentro do software, ou seja, a classe deve ter uma única tarefa ou ação para executar.
+1. Princípio da Responsabilidade Única — Esse princípio declara que uma classe deve ser especializada em um único assunto e possuir apenas uma responsabilidade dentro do software, ou seja, a classe deve ter uma única tarefa ou ação para executar.
 
 2. Princípio Aberto-Fechado — Objetos ou entidades devem estar abertos para extensão, mas fechados para modificação, ou seja, quando novos comportamentos e recursos precisam ser adicionados no software, devemos estender e não alterar o código fonte original.
 
@@ -22,3 +22,4 @@ SOLID é um acrônimo criado por Michael Feathers, após observar que cinco prin
 
 
 [veja mais ](https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530)
+
