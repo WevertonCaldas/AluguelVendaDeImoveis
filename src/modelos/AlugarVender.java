@@ -1,4 +1,4 @@
-package Modelos;
+package modelos;
 
 public class AlugarVender extends AbstImovel {
     Cliente cliente;
@@ -35,12 +35,12 @@ public class AlugarVender extends AbstImovel {
         this.tipo = tipo;
     }
 
-    public String getDescrição() {
+    public String getDescricao() {
         return descricao;
     }
 
-    public void setDescrição(String descrição) {
-        this.descricao = descrição;
+    public void setDescrcao(String descricao) {
+        this.descricao = descricao;
     }
 
     public Double getValor() {
@@ -89,5 +89,10 @@ public class AlugarVender extends AbstImovel {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    @Override
+    public String toString() {
+        return "Imovel{" + "numeroCadastro=" + numeroCadastro + ", tipo=" + tipo + ", descricao=" + descricao + ", valor=" + valor + ", status=" + status + ", corretor=" + corretor + ", endereco=" + endereco + ", contato=" + contato + ", cliente=" + cliente + '}';
     }
 }

@@ -1,4 +1,4 @@
-package Modelos;
+package modelos;
 
 
 public class Corretor extends AbstPessoa {
@@ -29,6 +29,14 @@ public class Corretor extends AbstPessoa {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public Contato getContato() {
